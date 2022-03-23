@@ -4,25 +4,60 @@
 <main>
   <section id="banner" class="sec">
     <nav>
+      <img src="/logo white.webp/" alt="Ummatun Wahida's logo" />
       <ol>
-        <li>About Us</li>
-        <li>What we do</li>
-        <li>Projects</li>
-        <li>Resources</li>
+        <li id="selected">Home</li>
+        <li>History</li>
+        <li>Vision</li>
       </ol>
     </nav>
     <h2>Ummatun Wahida</h2>
   </section>
-  <section id="story" class="sec"><h2>Our Story</h2></section>
+  <section id="story" class="sec">
+    <div class="up">
+      <section class="img"><img src="/story.png" alt="" /></section>
+      <section class="text">Introductory paragraph goes here</section>
+    </div>
+    <div class="down">
+      <section class="text">Introductory paragraph goes here</section>
+      <section class="img">
+        <img src="/home page design 2.png" alt="" />
+      </section>
+    </div>
+  </section>
   <section id="plans" class="sec"><h2>What we want to do</h2></section>
-  <section id="team" class="sec"><h2>Our Team</h2></section>
+  <section id="team" class="sec">
+    <div class="pride"><h1>We Take Pride in Our Numbers</h1></div>
+    <div class="data">
+      <section class="info">
+        <h1>15</h1>
+        <p>Years of Experience</p>
+      </section>
+      <section class="info">
+        <h1>4</h1>
+        <p>Current Projects</p>
+      </section>
+      <section class="info">
+        <h1>67</h1>
+        <p>Team Members</p>
+      </section>
+      <section class="info">
+        <h1>22</h1>
+        <p>Infographs Made</p>
+      </section>
+      <section class="info">
+        <h1>5</h1>
+        <p>Countries</p>
+      </section>
+    </div>
+  </section>
   <section id="contact" class="sec"><h2>Contact Us</h2></section>
 </main>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@600&display=swap");
   main {
     text-align: center;
-
     max-width: 240px;
     margin: 0 auto;
   }
@@ -36,7 +71,7 @@
   .sec {
     height: 400px;
     width: 100vw;
-    background-color: aliceblue;
+    background-color: rgb(20, 20, 22);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,28 +79,138 @@
   .sec h2 {
     color: black;
   }
+
+  #banner {
+    height: 70vh;
+    width: 100vw;
+  }
   ol {
     list-style: none;
     display: flex;
-    width: 50vw;
     justify-content: space-between;
+    align-items: center;
+    max-width: 30vw;
+    width: fit-content;
   }
 
+  ol li {
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    padding-top: 25px;
+    font-family: "Raleway", sans-serif;
+  }
   nav {
+    padding-top: 30px;
     justify-self: flex-start;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    max-height: 5vh;
+    min-height: 50px;
+    height: 70px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
 
+  nav img {
+    height: 200%;
+    width: auto;
+  }
   #banner h2 {
     margin-top: 70px;
     font-size: 40px;
-  }
-  #banner li,
-  #banner h2 {
     color: whitesmoke;
   }
-  #banner {
-    height: 300px;
-    background-image: url("/banner4.svg");
-    background-size: cover;
+  #selected {
+    color: rgb(253, 98, 98);
   }
+
+  .up,
+  .down {
+    min-height: 200px;
+    max-height: 600px;
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .down {
+    margin-top: 130px;
+  }
+
+  .text {
+    margin-left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    color: #8a8a8a;
+  }
+  .img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .img img {
+    width: 600px;
+    height: auto;
+  }
+
+  .down img {
+    height: 350px;
+    width: auto;
+  }
+  #story {
+    min-height: 800px;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pride h1 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  #team {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .data {
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    border-bottom: #3f4349 4px solid;
+  }
+
+  .info h1 {
+    margin: 0;
+    padding: 0;
+    color: rgb(253, 98, 98);
+    font-size: 60px;
+    font-weight: 500;
+  }
+
+  .info p {
+    color: #8a8a8a;
+    font-size: 15px;
+  }
+  /* para font normal normal normal 16px/1.4em 'open sans',sans-serif*/
 </style>
