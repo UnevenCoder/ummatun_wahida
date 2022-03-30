@@ -25,7 +25,32 @@
       </section>
     </div>
   </section>
-  <section id="plans" class="sec"><h2>What we want to do</h2></section>
+  <section id="plans" class="sec">
+    <table>
+      <tr>
+        <td id="h">
+          <h1>another paragraph about whatever has to go in this page</h1>
+        </td>
+        <td id="p">
+          <p>
+            paragraph paragraph paragraph paragraph paragraph paragraph
+            paragraphparagraph paragraph paragraph paragraph paragraph paragraph
+            paragraph paragraph paragraph paragraph paragraph paragraph ​
+          </p>
+          <p>
+            his is a great space to write a long text about your company and
+            your services. You can use this space to go into a little more
+            detail about your company. Talk about your team and what services
+            you provide. Tell your visitors the story of how you came up with
+            the idea for your business and what makes you different from your
+            competitors. Make your company stand out and show your visitors who
+            you are.
+          </p>
+          <button>Learn more</button>
+        </td>
+      </tr>
+    </table>
+  </section>
   <section id="team" class="sec">
     <div class="pride"><h1>We Take Pride in Our Numbers</h1></div>
     <div class="data">
@@ -212,5 +237,67 @@
     color: #8a8a8a;
     font-size: 15px;
   }
+
+  li:hover {
+    color: rgb(253, 98, 98);
+  }
+
+  #plans {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+  }
+
+  table {
+    width: 90vw;
+    max-height: 1200px;
+    min-height: 500px;
+    border: 0.5px solid grey;
+  }
+  td {
+    max-height: 1100px;
+    height: 90vh;
+    min-height: 500px;
+  }
+  #h {
+    width: 40%;
+    border-right: 0.5px solid grey;
+    background-image: url("/bg2.jfif");
+    color: white;
+    font-family: poppins-extralight, poppins, sans-serif;
+    font-size: large;
+    text-align: center;
+  }
+  #h h1 {
+    width: 80%;
+    padding-left: 10%;
+  }
+  #p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "open sans", sans-serif;
+  }
+
+  #p p {
+    width: 40%;
+    font-size: 18px;
+    text-align: justify;
+    color: #8a8a8a;
+    line-height: 1.5;
+  }
+
+  #p button {
+    background-color: rgb(253, 98, 98);
+    border: none;
+    color: #141416;
+    align-self: center;
+    height: 50px;
+    width: 140px;
+    border-radius: 5px;
+  }
+
   /* para font normal normal normal 16px/1.4em 'open sans',sans-serif*/
 </style>
