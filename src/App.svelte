@@ -4,14 +4,13 @@
 <main>
   <section id="banner" class="sec">
     <nav>
-      <img src="/logo white.webp/" alt="Ummatun Wahida's logo" />
       <ol>
-        <li id="selected">Home</li>
-        <li>History</li>
-        <li>Vision</li>
+        <li id="selected">Our Story</li>
+        <li>What we do</li>
+        <li>Projects</li>
+        <li>Resources</li>
       </ol>
     </nav>
-    <h2>Ummatun Wahida</h2>
   </section>
   <section id="story" class="sec">
     <div class="up">
@@ -28,9 +27,7 @@
   <section id="plans" class="sec">
     <table>
       <tr>
-        <td id="h">
-          <h1>another paragraph about whatever has to go in this page</h1>
-        </td>
+        <td id="h" />
         <td id="p">
           <p>
             paragraph paragraph paragraph paragraph paragraph paragraph
@@ -81,6 +78,7 @@
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@600&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@500&family=Poppins:wght@200&family=Raleway:wght@600&display=swap");
   main {
     text-align: center;
     max-width: 240px;
@@ -106,50 +104,39 @@
   }
 
   #banner {
-    height: 70vh;
+    height: 100vh;
     width: 100vw;
+    background-image: url("/banner.jpg");
+    background-repeat: none;
+    background-size: cover;
   }
+
   ol {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 30vw;
+    max-width: 100vw;
     width: fit-content;
   }
 
   ol li {
-    padding-left: 20px;
+    padding-left: 30px;
     color: rgb(255, 255, 255);
-    font-size: 1.2em;
+    font-size: 1.45em;
     padding-top: 25px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Courier Prime", monospace;
   }
   nav {
     padding-top: 30px;
-    justify-self: flex-start;
-    width: 90vw;
+    justify-self: center;
+    width: 95vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-height: 5vh;
     min-height: 50px;
     height: 70px;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
-  }
-
-  nav img {
-    height: 200%;
-    width: auto;
-  }
-  #banner h2 {
-    margin-top: 70px;
-    font-size: 40px;
-    color: whitesmoke;
-  }
-  #selected {
-    color: rgb(253, 98, 98);
   }
 
   .up,
@@ -245,33 +232,34 @@
   #plans {
     display: flex;
     justify-content: center;
-    height: max-content;
+    height: 110vh;
+    background-image: url("/banner2.jpeg");
   }
 
   table {
-    width: 90vw;
-    max-height: 1200px;
+    width: 95vw;
+    max-height: 15000px;
     min-height: 500px;
     border: 0.5px solid grey;
   }
   td {
-    max-height: 1100px;
+    max-height: 1500px;
     height: 90vh;
     min-height: 500px;
   }
   #h {
-    width: 40%;
-    border-right: 0.5px solid grey;
-    background-image: url("/bg2.jfif");
+    width: 50%;
+    background-image: url("/imgleft2.jpg");
     color: white;
     font-family: poppins-extralight, poppins, sans-serif;
     font-size: large;
     text-align: center;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
-  #h h1 {
-    width: 80%;
-    padding-left: 10%;
-  }
+
   #p {
     width: 100%;
     display: flex;
