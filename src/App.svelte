@@ -47,7 +47,7 @@
     </div>
     <div id="do2">
       <section class="do3" id="box1">
-        <div class="tpbox" id="tbb1">.</div>
+        <div class="tpbox" id="tbb1" />
         <div class="btbox">
           <h2>Projects</h2>
           <h5>Regarding different subjects in Islam</h5>
@@ -63,38 +63,18 @@
       <section class="do3" id="box3">
         <div class="tpbox" id="tbb2">.</div>
         <div class="btbox">
-          <h2>Projects</h2>
-          <h5>Regarding different subjects in Islam</h5>
+          <h2>Resources</h2>
+          <h5>
+            Simple resource documents for the topics you need information on
+          </h5>
         </div>
       </section>
     </div>
   </section>
   <section id="team" class="sec">
-    <div class="pride"><h1>We Take Pride in Our Numbers</h1></div>
-    <div class="data">
-      <section class="info">
-        <h1>15</h1>
-        <p>Years of Experience</p>
-      </section>
-      <section class="info">
-        <h1>4</h1>
-        <p>Current Projects</p>
-      </section>
-      <section class="info">
-        <h1>67</h1>
-        <p>Team Members</p>
-      </section>
-      <section class="info">
-        <h1>22</h1>
-        <p>Infographs Made</p>
-      </section>
-      <section class="info">
-        <h1>5</h1>
-        <p>Countries</p>
-      </section>
-    </div>
+    <div>Team blabla</div>
+    <div id="ti">img here</div>
   </section>
-  <section id="contact" class="sec"><h2>Contact Us</h2></section>
 </main>
 
 <style>
@@ -120,7 +100,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/background.jpg");
+    background-image: url("/5.svg");
     background-size: cover;
   }
   .sec h2 {
@@ -204,42 +184,15 @@
     background-repeat: no-repeat;
   }
 
-  .pride h1 {
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    font-family: "Poppins", sans-serif;
-  }
   #team {
-    height: 400px;
+    min-height: 800px;
+    height: 100vh;
+    color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-  }
-
-  .data {
-    width: 70vw;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column;
-    border-bottom: #3f4349 4px solid;
-  }
-
-  .info h1 {
-    margin: 0;
-    padding: 0;
-    color: rgb(253, 98, 98);
-    font-size: 60px;
-    font-weight: 500;
-  }
-
-  .info p {
-    color: #8a8a8a;
-    font-size: 15px;
+    align-items: flex-end;
+    background-image: url("/6.svg");
   }
 
   li:hover {
@@ -250,7 +203,7 @@
     display: flex;
     justify-content: space-around;
     height: 110vh;
-    background-image: url("/background.jpg");
+    background-image: url("/5.svg");
   }
   #do1 {
     height: 25%;
@@ -288,7 +241,13 @@
   }
   #tbb1 {
     background-color: black;
-    background-image: url("/2.svg");
+    background-image: url("/girlwb.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #tbb2 {
+    background-color: black;
+    background-image: url("/girlwb.svg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -302,5 +261,54 @@
     font-family: "Courier Prime", monospace;
     text-decoration: underline;
     font-weight: bolder;
+  }
+
+  #box1 {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  #box3 {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  .btbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btbox h2 {
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 0;
+  }
+
+  .btbox h5 {
+    width: 80%;
+    font-family: raleway;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 5px;
+    font-weight: lighter;
+  }
+  #box2 {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: raleway, sans-serif;
+    line-height: 30px;
+  }
+  #ti {
+    width: 25%;
+    height: auto;
+    background-image: url("/map.svg");
   }
 </style>
