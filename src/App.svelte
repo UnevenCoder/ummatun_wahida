@@ -1,6 +1,9 @@
 <script>
+  import Resources from "./Resources.svelte";
 </script>
 
+<Resources />
+<!--
 <main>
   <section id="banner" class="sec">
     <nav>
@@ -312,3 +315,4 @@
     background-image: url("/map.svg");
   }
 </style>
+-->
